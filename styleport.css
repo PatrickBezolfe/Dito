@@ -1,0 +1,72 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    background-color: #000000;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    
+}
+
+#logo {
+    margin: 20px;
+}
+
+#burg {
+    margin: 20px;
+    cursor: pointer;
+}
+#itens {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #000000;
+}
+.menu-itens {
+    margin: 90px 20px;
+    font-size: 2.2rem;
+    font-weight: bold;
+
+}
+
+.itens-info {
+    font-size: 0.9rem;
+    margin-top: 350px;
+}
+
+#itens li, a{
+    
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+#close {
+    margin: 20px;
+    cursor: pointer;
+}
+
+.frame {
+    margin: 20px;
+    max-width: 370px;
+}
+
+.info-port {
+    margin: 20px;
+}
+
+.ctt-port {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}

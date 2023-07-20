@@ -17,7 +17,9 @@
 
     <header class="capa" id="home">
         <nav id="navigation">
-            <a href="#home"><img id="logo" src="/imagem/LogoDito.png" alt="Logomarca Dito Produtora"></a>
+            <a href="#home">
+                <img id="logo" src="/imagem/LogoDito.png" alt="Logomarca Dito Produtora">
+            </a>
             <img id="burg" onclick="clickMenu()" src="/imagem/menu.svg" alt="Menu" >
             <div id="itens">
                 <ul class="menu-itens" onclick="clickOpen()">
@@ -31,21 +33,28 @@
                 <img id="close" onclick="clickClose()" src="/imagem/iconClose.svg" alt="Fechar Menu">
             </div>
         </nav>
-        <div class="conteiner">
+        <div class="video-container">
+            <video src="/videos/banner-01-diversos.mp4" autoplay muted loop></video>
+            
             <span class="info-capa">
                 Produtora com expertise em criação de conteúdos autênticos e impactantes para <strong>marcas</strong> e <strong>artistas.</strong> 
             </span> 
-        </div>    
+        </div>
     </header>
 
     <main class="capa-main" id="jobs">
-        <div class="conteiner">
-            <span class="info-main">
-                <h4>teste</h4>
+        <div class="container-main">
+            <div class="info-main">
+                <h4>INSTITUCIONAL</h4>
                 <h1>MUDE & VIVO</h1>
-            </span> 
-            <a href="#home"><img class="icon-up" src="/imagem/iconUp.svg" alt="Início da página"></a>
+            </div> 
+            <div class="img-main">
+                <a  href="">
+                    <img id="vivo" src="/imagem/capa-main02.png" alt="Imagens Mude e Vivo">
+                </a>
+            </div>
         </div>
+        <a href="#home"><img id="icon-up" src="/imagem/iconUp.svg" alt="Início da página"></a>
     </main>
 
     <section class="capa-section" id="services">

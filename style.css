@@ -5,6 +5,7 @@
     box-sizing: border-box;
     color: #FFFFFF;
     font-family: sans-serif;
+    background-color: #000000;
     
 }
 
@@ -13,10 +14,7 @@
 /*--HEADER--*/
 
 .capa {
-    background-image: url(/imagem/foto\ capa\ 1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    
     height: 100vh ;
     width: 100vw;
 }
@@ -26,17 +24,28 @@ nav {
     justify-content: space-between;
     position: fixed;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+nav > a {
+    background-color: rgba(0, 0, 0, 0);
     
 }
 
 #logo {
     margin: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    
+    
 }
 
 #burg {
     margin: 20px;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
 }
+
 #itens {
     display: none;
     width: 100vw;
@@ -69,43 +78,93 @@ nav {
     cursor: pointer;
 }
 
-.conteiner{
-    
+.video-container {
+    position: relative;
+    width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
+    overflow: hidden;
+    
 }
+
+.video-container video {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}  
+
 .info-capa {
-    margin: 10px 140px 10px 20px;
-    font-size: 0.9rem;
+    position: absolute;
+    bottom: 40px; 
+    left: 20px; 
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff; 
+    padding: 5px 10px;
+    font-size: 14px; 
+    
 }
+    
+.info-capa > strong {
+    background-color: rgba(0, 0, 0, 0);
+}
+
 
 
 /*--MAIN--*/
 
 .capa-main {
-    background-image: url(/imagem/capa-main02.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    
     height: 100vh ;
     width: 100vw;
     
     
 }
 
+.container-main{
+    display: flex;
+    position: relative;
+    height: 100vh;
+}
+
 .info-main {
+    
+    position: absolute;
+    bottom: 20px;
     margin: 20px;
     font-family: sans-serif;
     font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0);
     
     
 }
 
-.icon-up {
-    margin: 20px;
+.info-main > h4, h1 {
     
+    background-color: rgba(0, 0, 0, 0);
+    
+    
+}
+
+
+#vivo {
+    
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+
+
+
+
+#icon-up {
+    
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -122,7 +181,8 @@ nav {
 }
 
 .conteiner-section {
-    margin-top: 70px;
+    margin-top: 80px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     font-size: 0.75rem;
@@ -136,19 +196,15 @@ nav {
 
 .sec-img {
     display: flex;
+    
 }
 
 #ditomark {
     width: 100vw;
+    height: 95%;
+    
 }
 
-.icon-up {
-    
-    position: fixed;
-    right: 20px;
-    top: 500px;
-    
-}
 
 /*--FOOTER--*/
 
@@ -183,15 +239,113 @@ nav {
 
 @media screen and (min-width: 768px) {
 
-    #navigation {
-        display: fixed;
-        background-color: #000000;
-    }
+    /*--HEADER--*/
 
     #burg {
         display: none;
     }
 
+    nav {
+        
+        align-items: center;
+    }
+
+    #itens {
+        display: block;
+        width: 40%;
+        height: 10px;
+        
+        background-color: rgba(0, 0, 0, 0);
+        
+        
+    }
+    .menu-itens {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 0.8rem;
+        margin: auto 20px;
+        
+        
+        
     
+    }
+    .menu-itens, li, a {
+        background-color: rgba(0, 0, 0, 0)
+    }
+
+
+
+    #close {
+        display: none;
+    }
+    .itens-info {
+        display: none;
+    }
     
+ 
+    
+    /*--MAIN--*/
+
+
+    .capa-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh ;
+        width: 100vw;
+        
+        
+    }
+
+    .container-main{
+        position: static;
+        display: flex;
+        
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+       
+        width: 100vw;
+    }
+
+
+    .info-main {
+        
+        display: flex;
+        flex-direction: column;
+        
+        position: static;
+        margin-left: 65px;
+        font-family: sans-serif;
+        font-size: 2.2rem;
+        background-color: rgba(0, 0, 0, 0);
+        
+        
+    }
+
+    .info-main > h4, h1 {
+        
+        background-color: rgba(0, 0, 0, 0);
+        
+        
+    }
+
+
+    #vivo {
+        
+        height: auto;
+        width: 60vw;
+        object-fit: cover;
+    }
+
+
+
+
+
+    #icon-up {
+        display: none;
+        position: absolute;
+        
+    }
 }

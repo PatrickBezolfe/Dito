@@ -9,7 +9,7 @@
     
     <title>Dito Produtora</title>
 
-    <script src="scripts.js"></script>
+    
 
 </head>
 
@@ -17,11 +17,13 @@
 
     <header class="capa" id="home">
         <nav id="navigation">
-            <a href="#home"><img id="logo" src="/imagem/LogoDito.png" alt="Logomarca Dito Produtora"></a>
+            <a href="#home">
+                <img id="logo" src="/imagem/LogoDito.png" alt="Logomarca Dito Produtora">
+            </a>
             <img id="burg" onclick="clickMenu()" src="/imagem/menu.svg" alt="Menu" >
             <div id="itens">
                 <ul class="menu-itens" onclick="clickOpen()">
-                    <li><a href="portfolio.html" >TRABALHOS</a></li>
+                    <li><a href="esportes.html" >TRABALHOS</a></li>
                     <li><a href="#services">SERVIÇOS</a></li>
                     <li><a href="#contact">CONTATO</a></li>
                     <li class="itens-info">dito<br>
@@ -31,61 +33,203 @@
                 <img id="close" onclick="clickClose()" src="/imagem/iconClose.svg" alt="Fechar Menu">
             </div>
         </nav>
-        <div class="conteiner">
+        <div class="video-container">
+            <video src="/videos/banner-01-diversos.mp4" autoplay muted loop></video>
+            
             <span class="info-capa">
                 Produtora com expertise em criação de conteúdos autênticos e impactantes para <strong>marcas</strong> e <strong>artistas.</strong> 
             </span> 
-        </div>    
+        </div>
     </header>
 
-    <main class="capa-main" id="jobs">
-        <div class="conteiner">
-            <span class="info-main">
-                <h4>Main</h4>
-                <h1>MUDE & VIVO</h1>
-            </span> 
-            <a href="#home"><img class="icon-up" src="/imagem/iconUp.svg" alt="Início da página"></a>
+    <section class="capa-main" id="jobs">
+        <div class="carrossel">
+            <input type="radio" name="radioBtn" id="carrossel1">
+            <input type="radio" name="radioBtn" id="carrossel2">
+            <input type="radio" name="radioBtn" id="carrossel3">
+            <input type="radio" name="radioBtn" id="carrossel4">
+            <input type="radio" name="radioBtn" id="carrossel5">
+            <input type="radio" name="radioBtn" id="carrossel6">
+            
+            
+            <div class="container-main first">
+                <div class="info-main">
+                    <h4>ESPORTE</h4>
+                    <h1>MUDE & VIVO</h1>
+                </div> 
+                <div class="img-main">
+                    <a  href="">
+                        <img class="vivo" src="/imagem/carrossel1.png" alt="Imagens Mude e Vivo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-main">
+                <div class="info-main">
+                    <h4>MÚSICA</h4>
+                    <h1>TIME WARP</h1>
+                </div> 
+                <div class="img-main">
+                    <a  href="">
+                        <img class="vivo" src="/imagem/carrossel2.jpg" alt="Imagens Time Warp">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-main">
+                <div class="info-main">
+                    <h4>ESPORTE</h4>
+                    <h1>AMSTEL ULTRA</h1>
+                </div> 
+                <div class="img-main">
+                    <a  href="">
+                        <img class="vivo" src="/imagem/carrossel3.jpg" alt="Imagens Amstel Ultra">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-main">
+                <div class="info-main">
+                    <h4>MÚSICA</h4>
+                    <h1>BINARYH</h1>
+                </div> 
+                <div class="img-main">
+                    <a  href="">
+                        <img class="vivo" src="/imagem/carrossel4.jpg" alt="Imagens Binaryh">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-main">
+                <div class="info-main">
+                    <h4>ESPORTE</h4>
+                    <h1>MERCADO LIVRE</h1>
+                </div> 
+                <div class="img-main">
+                    <a  href="">
+                        <img class="vivo" src="/imagem/carrossel5.jpg" alt="Imagens Mercado Livre">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-main">
+                <div class="info-main">
+                    <h4>MÚSICA</h4>
+                    <h1>RENATO RATIER & DIOGO ACCIOLY</h1>
+                </div> 
+                <div class="img-main">
+                    <a  href="">
+                        <img class="vivo" src="/imagem/carrossel6.jpg" alt="Imagens Renato Ratier e Diogo Accioly">
+                    </a>
+                </div>
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+            </div>
         </div>
-    </main>
+        <div class="manual-navigation">
+            <label for="carrossel1" class="manual-btn"></label>
+            <label for="carrossel2" class="manual-btn"></label>
+            <label for="carrossel3" class="manual-btn"></label>
+            <label for="carrossel4" class="manual-btn"></label>
+            <label for="carrossel5" class="manual-btn"></label>
+            <label for="carrossel6" class="manual-btn"></label>
+        </div>
+        <a href="#home"><img id="icon-up" src="/imagem/iconUp.svg" alt="Início da página"></a>
+    </section>
 
     <section class="capa-section" id="services">
-        <div class="conteiner-section">
-            <div class="sec-info">
+        <div class="info-sectionMobile">
+            <div class="infoCol">
                 <h3>SERVIÇOS</h3>
                 <br>
                 <p>Filmagens aéreas, Produção de video, Fotografia, Edição e retoque digital, Edição de conteúdos, Motion design e Time-lapses
                 </p>
             </div>
-            <div class="sec-info">
+            <div class="infoCol">
                 <h3>ARTISTAS</h3>
                 <br>
                 <p>Belisa, Binaryh, Blancah, Ciribelli, Charlotte de Witte, Deslize, Diogo Aciolly, Limbo, L_cio, Nina Roq, Renato Ratier, Tessuto
                 </p>
             </div>
-            <div class="sec-info">
+            <div class="infoCol">
                 <h3>MARCAS</h3>
                 <br>
                 <p>Amstel Ultra, DPSP, Icatu, Mercado Livre, Michelob, Mude - Fitness & Wellness, NotCo, Ortobom, Unimed-Rio, Vivo, Wolffit, Yoganaya
                 </p>
             </div>
         </div>
+        <div class="info-sectionDesktop">
+            <ul class="infoCol">
+                <h3>SERVIÇOS</h3>
+                
+                <li>Filmagens aéreas</li>
+                <li>Produção de video</li>
+                <li>Fotografia </li>
+                <li>Edição e retoque digital</li>
+                <li>Edição de conteúdos </li>
+                <li>Motion design </li>
+                <li>Time-lapses</li>
+            </ul>
+            <ul class="infoCol">
+                <h3>ARTISTAS</h3>
+                
+                <li>Belisa</li>
+                <li>Binaryh</li>
+                <li>Blancah</li>
+                <li>Ciribelli</li>
+                <li>Charlotte de Witte</li>
+                <li>Deslize</li>
+                <li>Diogo Aciolly</li>
+                <li>Limbo</li>
+                <li>L_cio</li>
+                <li>Nina Roq</li>
+                <li>Renato Ratier</li>
+                <li>Tessuto</li>
+            </ul>
+            <ul class="infoCol">
+                <h3>MARCAS</h3>
+                
+                <li>Amstel Ultra</li>
+                <li>DPSP</li>
+                <li>Icatu</li>
+                <li>Mercado Livre</li>
+                <li>Michelob</li>
+                <li>Mude - Fitness & Wellness</li>
+                <li>NotCo</li>
+                <li>Ortobom</li>
+                <li>Unimed-Rio</li>
+                <li>Vivo</li>
+                <li>Wolffit</li>
+                <li>Yoganaya</li>
+            </ul>
+        </div>
         <div class="sec-img">
-            <img id="ditomark" src="/imagem/marcadaguaLogo.png" alt="DITO">
-        </div>    
+            <img id="marcaDesktop" src="/imagem/logodagua.png" alt="DITO">
+        </div>
+        <div class="sec-img">
+            <img id="marcaMobile" src="/imagem/marcadaguaLogo02.png" alt="DITO">
+        </div>
+        <div class="mail">
+            <h5>ENTRE EM CONTATO</h5>
+            <br>
+            <p class="p-mail">Pelo email <strong>contato@dito.pro</strong> e acompanhe nas redes sociais <strong>instagram, youtube e linkedin.</strong>
+            </p>
+        </div>      
     </section>
 
     <footer class="capa-footer" id="contact">
-        <div class="conteiner-footer">
-            <h5>ENTRE EM CONTATO</h5>
-            <br>
-            <p class="p-foot">Pelo email <strong>contato@dito.pro</strong> e acompanhe nas redes sociais <strong>instagram, youtube e linkedin.</strong>
-            </p>
-        </div>    
-        <span class="rodape">
+        <span>
             2022 DITO
         </span>
     </footer>
-
+    <script src="scripts.js"></script>
 </body>
 
 </html>

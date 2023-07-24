@@ -76,18 +76,3 @@ window.addEventListener('scroll', function() {
 })
 
 
-let count = 1;
-document.getElementById("carrossel1").checked = true;
-
-setInterval( function() {
-    nextImage();
-}, 5000)
-
-function nextImage() {
-    count++;
-    if (count > 6){
-        count = 1;
-    }
-
-    document.getElementById("carrossel"+count).checked = true;
-}

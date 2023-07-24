@@ -85,14 +85,14 @@ nav > a {
     position: relative;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    object-fit: fill;
+    
+    
     
     
 }
 
 .videos{
-    display: block;
+    
     height: 100vh;
     width: 100vw;
     
@@ -122,121 +122,33 @@ nav > a {
 
 .capa-main {
     
-    height: 100vh ;
+    
     width: 100vw;
-    overflow: hidden;
+    
     
 }
 .carrossel {
     display: flex; 
-    height: 90%;
+    flex-direction: column;
     width: 100vw;
-    position: relative;
+    
     
     
 }
 
-.carrossel input {
-    display: none;
-}
+
 
 .container-main{
     
     
     position: relative;
     height: 100vh;
-    width:100%;
-    transition: 1.5s ease-in;
+    width:100vw;
+    
     
 }
 
-.manual-navigation{
-    position: absolute;
-    right: 20px;
-    top: 1000px;
-    display: flex;
-    justify-content:end;
-    
-    flex-direction: column;
-    background-color: rgba(247, 79, 79, 0)
-}
 
-/*.manual-btn {
-    border: 2px solid #d49797;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-    margin: 5px;
-    color: #D70F0F;
-    background-color: rgba(247, 79, 79, 0.4);
-}
-
-
-
-.manual-btn:hover{
-    background-color: #D70F0F;
-}*/
-
-#carrossel1:checked ~ .first{
-    margin-left: 0%;
-}
-#carrossel2:checked ~ .first{
-    margin-left: -100%;
-}
-#carrossel3:checked ~ .first{
-    margin-left: -200%;
-}
-#carrossel4:checked ~ .first{
-    margin-left: -300%;;
-}
-#carrossel5:checked ~ .first{
-    margin-left: -400%;
-}
-#carrossel6:checked ~ .first{
-    margin-left: -500%;
-}
-
-.navigation-auto div{
-    border: 2px solid #d49797;
-    padding: 5px;
-
-    margin-top: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto{
-    margin: 5px;
-    position: absolute;
-    top: 366px;
-    right: 37px;
-    display: flex;
-    justify-content: flex-end;
-    
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-#carrossel1:checked ~.navigation-auto .auto-btn1{
-    background-color: #D70F0F;
-}
-#carrossel2:checked ~.navigation-auto .auto-btn2{
-    background-color: #D70F0F;
-}
-#carrossel3:checked ~.navigation-auto .auto-btn3{
-    background-color: #D70F0F;
-}
-#carrossel4:checked ~.navigation-auto .auto-btn4{
-    background-color: #D70F0F;
-}
-#carrossel5:checked ~.navigation-auto .auto-btn5{
-    background-color: #D70F0F;
-}
-#carrossel6:checked ~.navigation-auto .auto-btn6{
-    background-color: #D70F0F;
-}
 
 
 
@@ -304,7 +216,6 @@ nav > a {
     font-size: 0.75rem;
     gap: 30px;
     margin-left: 20px;
-    margin-right: 50px;
     
 
 }
@@ -314,10 +225,7 @@ nav > a {
 }
 
 
-.sec-img {
-    display: flex;
-    
-}
+
 
 #marcaDesktop {
     display: none;
@@ -325,11 +233,11 @@ nav > a {
 
 #marcaMobile {
     width: 100vw;
-    height: 94%;
+    
 }
 
 .mail {
-    margin: 20px;
+    margin: 70px 20px;
 }
 
 .p-mail {
@@ -401,19 +309,16 @@ nav > a {
 
 
     .capa-main {
-        display: block;
-        height: 100vh ;
-        width: auto;
-        overflow: hidden;
+        
+        
+        
+        
         
     }
     .carrossel {
-        display: flex; 
         
-        width: 100vw;
-        position: relative;
-        
-        
+
+
     }
     
     
@@ -423,44 +328,14 @@ nav > a {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
+        
         height: 100vh;
         width:100vw;
-        transition: 2s ease;
+        
         
     }
     
-    .manual-navigation{
-        position: absolute;
-        
-        top: 1000px;
-        display: flex;
-        
-        
-        flex-direction: column;
-        background-color: rgba(247, 79, 79, 0)
-    }
-    .navigation-auto div{
-        border: 2px solid #d49797;
-        padding: 5px;
     
-        margin-top: 10px;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: 1s;
-    }
-    
-    .navigation-auto{
-        margin: 5px;
-        position: absolute;
-        top: 250px;
-        right: 37px;
-        display: flex;
-        justify-content: flex-end;
-        
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0);
-    }
 
     .info-main {
         
@@ -508,10 +383,8 @@ nav > a {
         background-color: #000000;
         height: 100vh;
         width: 100vw;
-        display: flex;
-        flex-direction: row;
-        margin-top: 0px;
         gap: 0px;
+        overflow: hidden;
     
     }
     
@@ -523,20 +396,11 @@ nav > a {
     
     }
 
-    .info-sectionDesktop{
-        display: flex;
-        position: absolute;
-        top: 1450px;
-        right: 50px;
-        font-size: 0.75rem;
-        gap: 35px;
-        margin-left: 20px;
-        background-color: rgba(0, 0, 0, 0);
-        z-index: 2;
-    }
+    
     
     
     .infoCol {
+        
         width: 150px;
         list-style: none;
         background-color: rgba(0, 0, 0, 0);   
@@ -549,23 +413,25 @@ nav > a {
         margin-bottom: 20px;
     }
 
-    .mail {
-        position: absolute;
-        top: 1400px;
+    
+    .info-sectionDesktop{
         display: flex;
-        flex-direction: column;
-        width: 30%;
-        left: 50px;
+        
+        position: relative;
+        top: 175px;
+        right: -50vw;
+        font-size: 0.75rem;
+        gap: 35px;
+        margin-left: 20px;
         background-color: rgba(0, 0, 0, 0);
         z-index: 2;
     }
 
-
     #marcaDesktop {
-        display: flex;
-        position: relative;
-        bottom: -360px;
         
+        display: block;
+        position: absolute;
+        bottom: -4550px;
         width: 100vw;
         height: 50%;
         z-index: 1;
@@ -573,6 +439,21 @@ nav > a {
         
         
     }
+
+    .mail {
+        
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 150px;
+        width: 30%;
+        margin-left: 50px;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 2;
+    }
+
+
+    
 
     #marcaMobile {
         display: none;
@@ -590,7 +471,7 @@ nav > a {
     .capa-footer {
         display: block;
         position: relative;
-        z-index: 2;
         background-color: rgba(0, 0, 0, 0);
+        z-index: 2;
     }
 }

@@ -6,11 +6,12 @@ function clickMenu() {
         burg.style.display = "none"
         logo.style.display = "none"
         jobs.style.display = "none"
+        
         services.style.display = "none"
         contact.style.display = "none"
         
         
-    }
+      }
 }
 
 function clickClose() {
@@ -39,14 +40,7 @@ function clickOpen() {
     }
 }
 
-//function clickTrabalho() {
-    
-    
-      //menuTrabalho.style.display = "flex"
-     // trab.style.visibility = "hidden"
-      
-    
-//}
+
 
 let divAtivada = false; // Variável para controlar o estado da função
 

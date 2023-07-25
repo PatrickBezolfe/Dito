@@ -453,9 +453,11 @@ nav > a {
 
     .infoCol > li {
         margin-top: 5px;
+        
     }
     .infoCol > h3 {
         margin-bottom: 20px;
+        background-color: rgba(0, 0, 0, 0); 
     }
 
     

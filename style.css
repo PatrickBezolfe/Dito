@@ -6,7 +6,7 @@
     color: #FFFFFF;
     font-family: sans-serif;
     background-color: #000000;
-    
+    scroll-behavior: smooth;
 }
 
 /*--MOBILE FIRST--*/

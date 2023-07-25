@@ -50,7 +50,8 @@ let divAtivada = false; // Variável para controlar o estado da função
     if (divAtivada) {
       conteudoDiv.style.display = 'none'; // Esconde a div
     } else {
-      conteudoDiv.style.display = 'flex'; // Mostra a div
+      conteudoDiv.style.display = 'flex';// Mostra a div
+       
     }
 
     divAtivada = !divAtivada; // Inverte o estado da função

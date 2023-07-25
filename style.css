@@ -249,7 +249,9 @@ nav > a {
 }
 
 #marcaMobile {
+    display: flex;
     width: 100vw;
+    
     
 }
 

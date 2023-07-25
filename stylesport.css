@@ -137,11 +137,16 @@ nav, a{
         align-items: center;
     }
 
+    #logo {
+        margin: 20px 80px;
+    }
+
+
     #itens {
         display: block;
-        width: 40%;
+        width: 30%;
         height: 10px;
-        
+        margin-right: 80px;
         background-color: rgba(0, 0, 0, 0);
         
         

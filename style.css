@@ -491,7 +491,7 @@ nav > a {
         display: flex;
         flex-direction: column;
         position: relative;
-        bottom: 150px;
+        bottom: 100px;
         width: 30%;
         margin-left: 50px;
         background-color: rgba(0, 0, 0, 0);

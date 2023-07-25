@@ -39,6 +39,7 @@ nav > a {
     background-color: rgba(0, 0, 0, 0);
     
     
+    
 }
 
 #burg {
@@ -56,10 +57,11 @@ nav > a {
     background-color: #000000;
 }
 .menu-itens {
+    display: block;
     margin: 90px 20px;
     font-size: 2.2rem;
     font-weight: bold;
-
+    cursor: pointer;
 }
 
 .itens-info {
@@ -71,6 +73,21 @@ nav > a {
     
     list-style: none;
     text-decoration: none;
+    
+}
+
+#menuTrabalho{
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    padding: 20px;
+    z-index: 4;
+    
     
 }
 
@@ -271,20 +288,29 @@ nav > a {
     }
 
     #itens {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        
         width: 40%;
-        height: 10px;
+        height: 50px;
         
         background-color: rgba(0, 0, 0, 0);
-        
+        justify-content: flex-start ;
+        align-items: flex-start;
+        margin-top: 40px;
+        margin-right: 20px;
+    
         
     }
     .menu-itens {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        margin: 0px;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
         font-size: 0.8rem;
-        margin: auto 20px;
+        z-index: 3;
         
         
         
@@ -294,7 +320,26 @@ nav > a {
         background-color: rgba(0, 0, 0, 0)
     }
 
-
+    #menuTrabalho{
+        display: none;
+        width: 150px;
+        
+        flex-direction: column;
+        gap: 15px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        position: relative;
+        top: 15px;
+        left: 0px;
+        padding: 0px;
+        
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 2;
+        
+        
+        
+    }
+    
 
     #close {
         display: none;

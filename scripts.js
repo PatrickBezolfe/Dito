@@ -9,11 +9,12 @@ function clickMenu() {
         services.style.display = "none"
         contact.style.display = "none"
         
+        
     }
 }
 
 function clickClose() {
-    if (burg.style.display == "flex") {
+    if (burg.style.display == "flex" ) {
         burg.style.display = "none"
     } else {
         burg.style.display = "flex"
@@ -22,11 +23,12 @@ function clickClose() {
         jobs.style.display = "block"
         services.style.display = "flex"
         contact.style.display = "flex"
+        menuTrabalho.style.display ="none"
     }
 }
 
 function clickOpen() {
-    if (itens.style.display == "flex") {
+    if (itens.style.display == "flex" ) {
         itens.style.display = "none"
         burg.style.display = "flex"
         logo.style.display = "flex"
@@ -37,6 +39,28 @@ function clickOpen() {
     }
 }
 
+//function clickTrabalho() {
+    
+    
+      //menuTrabalho.style.display = "flex"
+     // trab.style.visibility = "hidden"
+      
+    
+//}
+
+let divAtivada = false; // Variável para controlar o estado da função
+
+  function clickTrabalho() {
+    const conteudoDiv = document.getElementById('menuTrabalho');
+
+    if (divAtivada) {
+      conteudoDiv.style.display = 'none'; // Esconde a div
+    } else {
+      conteudoDiv.style.display = 'flex'; // Mostra a div
+    }
+
+    divAtivada = !divAtivada; // Inverte o estado da função
+  }
 
 
 window.addEventListener('scroll', function() {

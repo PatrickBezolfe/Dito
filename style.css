@@ -4,7 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     color: #FFFFFF;
-    font-family: sans-serif;
+    font-family: 'Cabin', sans-serif;
+    
     background-color: #000000;
     scroll-behavior: smooth;
 }
@@ -277,7 +278,7 @@ nav > a {
 
 /*--RESPONSIVE DESKTOP--*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 450px) {
 
     /*--HEADER--*/
 
@@ -358,7 +359,13 @@ nav > a {
         display: none;
     }
     
- 
+    .info-capa {
+        
+        width: 20vw;
+        font-weight:100;
+        font-size: 1rem; 
+        
+    }
     
     /*--MAIN--*/
 

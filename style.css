@@ -189,6 +189,9 @@ nav > a {
     
 }
 
+.description {
+    background-color: rgba(0, 0, 0, 0);
+}
 
 .vivo {
     
@@ -407,6 +410,9 @@ nav > a {
         
     }
 
+    .description {
+        font-size: 0.85rem;
+    }
 
     .vivo {
         
